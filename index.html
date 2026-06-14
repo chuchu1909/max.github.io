@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Nexus | Tu guía de estilo inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes de Google para un look moderno y elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NIVEL 1: Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Moda <span>Nexus</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#clima">Clima x Outfit</a></li>
+                    <li><a href="#tendencias">Tendencias</a></li>
+                    <li><a href="#journal">Journal</a></li>
+                </ul>
+            </nav>
+            <div class="header-extras">
+                <select class="lang-selector">
+                    <option value="es">ES</option>
+                    <option value="en">EN</option>
+                </select>
+                <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro / Misión -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h2>Viste con intención. Vive con estilo.</h2>
+            <p>Moda Nexus es tu guía digital para explorar quién eres y cómo quieres reflejarte ante el mundo. Combinamos las últimas tendencias, la inteligencia climática y la diversidad cultural para que cada día sea una nueva oportunidad para mostrar lo mejor de ti.</p>
+            <a href="#clima" class="btn-primary">Descubre tu outfit de hoy</a>
+        </div>
+    </section>
+
+    <!-- NIVEL 2: Herramienta Clima x Outfit -->
+    <section id="clima" class="section-clima">
+        <div class="container">
+            <div class="section-title">
+                <h2>Clima x Outfit</h2>
+                <p>Dinos tu ciudad o el clima actual y te sugeriremos el atuendo perfecto.</p>
+            </div>
+            <div class="clima-tool">
+                <div class="input-group">
+                    <input type="text" id="cityInput" placeholder="Ej: Caracas, soleado, 28°C">
+                    <button id="searchBtn" class="btn-primary"><i class="fas fa-search"></i> Buscar</button>
+                </div>
+                <div id="outfitResult" class="outfit-result hidden">
+                    <!-- Aquí se inyectará el resultado con JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NIVEL 2: Grid de Tendencias (4 Bloques Regionales) -->
+    <section id="tendencias" class="section-tendencias">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tendencias por Continente</h2>
+                <p>La moda es un lenguaje universal con dialectos locales.</p>
+            </div>
+            <div class="grid-4">
+                <div class="card-region">
+                    <div class="card-img" style="background-color: #e0e0e0;">🇪🇺</div>
+                    <h3>Europa</h3>
+                    <p>Elegancia atemporal, cortes estructurados y minimalismo sofisticado.</p>
+                </div>
+                <div class="card-region">
+                    <div class="card-img" style="background-color: #d4e6f1;">🌏</div>
+                    <h3>Asia</h3>
+                    <p>Fusión de tradición y vanguardia tecnológica. Siluetas oversize y texturas innovadoras.</p>
+                </div>
+                <div class="card-region">
+                    <div class="card-img" style="background-color: #f9e79f;">🌎</div>
+                    <h3>América Latina</h3>
+                    <p>Colores vibrantes, artesanía textil y una mezcla cultural que celebra la identidad.</p>
+                </div>
+                <div class="card-region">
+                    <div class="card-img" style="background-color: #d5f5e3;">🌍</div>
+                    <h3>África</h3>
+                    <p>Estampados audaces, telas tradicionales como el Ankara y una explosión de creatividad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NIVEL 3: Contenido Profundo (Journal y Secciones) -->
+    <section id="journal" class="section-journal">
+        <div class="container">
+            <div class="section-title">
+                <h2>Moda Nexus Journal</h2>
+            </div>
+            <!-- 3 Columnas como se solicitó en el PDF -->
+            <div class="grid-3">
+                <div class="col-journal">
+                    <h3><i class="fas fa-newspaper"></i> Últimas Noticias</h3>
+                    <article>
+                        <h4>Homenaje a la alta costura</h4>
+                        <p>Un repaso por las pasarelas que están redefiniendo el lujo en 2026.</p>
+                        <a href="#">Leer más →</a>
+                    </article>
+                    <article>
+                        <h4>El regreso del denim</h4>
+                        <p>Cómo las marcas están reinventando la mezclilla con procesos sostenibles.</p>
+                        <a href="#">Leer más →</a>
+                    </article>
+                </div>
+                <div class="col-journal">
+                    <h3><i class="fas fa-th-large"></i> Categorías</h3>
+                    <ul class="category-list">
+                        <li><a href="#">Ropa Íntima & Confort</a></li>
+                        <li><a href="#">Accesorios Statement</a></li>
+                        <li><a href="#">Pantalones & Denim</a></li>
+                        <li><a href="#">Camisas & Blusas</a></li>
+                        <li><a href="#">Zapatos & Calzado</a></li>
+                    </ul>
+                </div>
+                <div class="col-journal">
+                    <h3><i class="fas fa-trophy"></i> Dinámicas & Estilo con Propósito</h3>
+                    <div class="dynamic-box">
+                        <h4>🌱 Moda Sostenible</h4>
+                        <p>Descubre nuestro directorio de marcas que respetan el medio ambiente y la diversidad de cuerpos.</p>
+                        <button class="btn-secondary">Ver Directorio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NIVEL 4: Pie de Página -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Moda Nexus</h3>
+                <p>Estética y funcionalidad se complementan. Tu punto de encuentro digital en el mundo de la moda.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Legal y Soporte</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Moda Nexus. Proyecto académico Escuela de Comunicación Social.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

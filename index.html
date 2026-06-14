@@ -23,6 +23,7 @@
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#clima">Clima x Outfit</a></li>
                     <li><a href="#tendencias">Tendencias</a></li>
+                    <li><a href="#outfits">Outfits</a></li>
                     <li><a href="#journal">Journal</a></li>
                 </ul>
             </nav>
@@ -36,8 +37,12 @@
         </div>
     </header>
 
-    <!-- Intro / Misión -->
+    <!-- Hero Section con Imagen de Pasarela -->
     <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-image">
+            <img src="https://i.imgur.com/eZMFpYX.jpg" alt="Pasarela Moda Nexus">
+        </div>
         <div class="container hero-content">
             <h2>Viste con intención. Vive con estilo.</h2>
             <p>Moda Nexus es tu guía digital para explorar quién eres y cómo quieres reflejarte ante el mundo. Combinamos las últimas tendencias, la inteligencia climática y la diversidad cultural para que cada día sea una nueva oportunidad para mostrar lo mejor de ti.</p>
@@ -53,6 +58,9 @@
                 <p>Dinos tu ciudad o el clima actual y te sugeriremos el atuendo perfecto.</p>
             </div>
             <div class="clima-tool">
+                <div class="clima-image-preview">
+                    <img src="https://i.imgur.com/xy4bcUb.jpg" alt="Outfit ejemplo">
+                </div>
                 <div class="input-group">
                     <input type="text" id="cityInput" placeholder="Ej: Caracas, soleado, 28°C">
                     <button id="searchBtn" class="btn-primary"><i class="fas fa-search"></i> Buscar</button>
@@ -64,7 +72,7 @@
         </div>
     </section>
 
-    <!-- NIVEL 2: Grid de Tendencias (4 Bloques Regionales) -->
+    <!-- NIVEL 2: Grid de Tendencias (4 Bloques Regionales con Imágenes) -->
     <section id="tendencias" class="section-tendencias">
         <div class="container">
             <div class="section-title">
@@ -73,24 +81,71 @@
             </div>
             <div class="grid-4">
                 <div class="card-region">
-                    <div class="card-img" style="background-color: #e0e0e0;">🇪🇺</div>
+                    <div class="card-img">
+                        <img src="https://i.imgur.com/D9zEQ5G.jpg" alt="Europa">
+                    </div>
                     <h3>Europa</h3>
                     <p>Elegancia atemporal, cortes estructurados y minimalismo sofisticado.</p>
                 </div>
                 <div class="card-region">
-                    <div class="card-img" style="background-color: #d4e6f1;">🌏</div>
+                    <div class="card-img">
+                        <img src="https://i.imgur.com/O39OnfJ.jpg" alt="Asia">
+                    </div>
                     <h3>Asia</h3>
                     <p>Fusión de tradición y vanguardia tecnológica. Siluetas oversize y texturas innovadoras.</p>
                 </div>
                 <div class="card-region">
-                    <div class="card-img" style="background-color: #f9e79f;">🌎</div>
+                    <div class="card-img">
+                        <img src="https://i.imgur.com/wprq5YN.jpg" alt="América Latina">
+                    </div>
                     <h3>América Latina</h3>
                     <p>Colores vibrantes, artesanía textil y una mezcla cultural que celebra la identidad.</p>
                 </div>
                 <div class="card-region">
-                    <div class="card-img" style="background-color: #d5f5e3;">🌍</div>
+                    <div class="card-img">
+                        <img src="https://i.imgur.com/kUXFal4.jpg" alt="África">
+                    </div>
                     <h3>África</h3>
                     <p>Estampados audaces, telas tradicionales como el Ankara y una explosión de creatividad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Outfits de la Semana -->
+    <section id="outfits" class="section-outfits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Outfits de la Semana</h2>
+                <p>Inspiración diaria para cada ocasión</p>
+            </div>
+            <div class="outfits-grid">
+                <img src="https://i.imgur.com/0NzGzUc.jpg" alt="Outfits of the week" class="outfits-main-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Behind the Scenes -->
+    <section class="section-bts">
+        <div class="container">
+            <div class="section-title">
+                <h2>Detrás de Cámaras</h2>
+                <p>Así creamos el contenido que te inspira</p>
+            </div>
+            <div class="bts-grid">
+                <div class="bts-item">
+                    <img src="https://i.imgur.com/jPfGzKC.jpg" alt="Producción editorial">
+                    <div class="bts-caption">
+                        <h4>Producción Editorial</h4>
+                        <p>Cada foto cuenta una historia</p>
+                    </div>
+                </div>
+                <div class="bts-item">
+                    <img src="https://i.imgur.com/0UL0rtp.jpg" alt="Sesión de fotos">
+                    <div class="bts-caption">
+                        <h4>Sesión de Fotos</h4>
+                        <p>Creamos tendencias, no solo las seguimos</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,6 +162,9 @@
                 <div class="col-journal">
                     <h3><i class="fas fa-newspaper"></i> Últimas Noticias</h3>
                     <article>
+                        <div class="article-image">
+                            <img src="https://i.imgur.com/Y3zBcrr.jpg" alt="Editorial moda">
+                        </div>
                         <h4>Homenaje a la alta costura</h4>
                         <p>Un repaso por las pasarelas que están redefiniendo el lujo en 2026.</p>
                         <a href="#">Leer más →</a>
@@ -126,6 +184,9 @@
                         <li><a href="#">Camisas & Blusas</a></li>
                         <li><a href="#">Zapatos & Calzado</a></li>
                     </ul>
+                    <div class="accessories-preview">
+                        <img src="https://i.imgur.com/wprq5YN.jpg" alt="Accesorios" class="accessories-img">
+                    </div>
                 </div>
                 <div class="col-journal">
                     <h3><i class="fas fa-trophy"></i> Dinámicas & Estilo con Propósito</h3>
@@ -133,6 +194,11 @@
                         <h4>🌱 Moda Sostenible</h4>
                         <p>Descubre nuestro directorio de marcas que respetan el medio ambiente y la diversidad de cuerpos.</p>
                         <button class="btn-secondary">Ver Directorio</button>
+                    </div>
+                    <div class="dynamic-box mt-20">
+                        <h4>📸 Front Row</h4>
+                        <p>Las mejores imágenes de las pasarelas internacionales.</p>
+                        <img src="https://i.imgur.com/0NzGzUc.jpg" alt="Front row" class="frontrow-img">
                     </div>
                 </div>
             </div>
